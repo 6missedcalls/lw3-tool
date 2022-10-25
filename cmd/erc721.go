@@ -6,8 +6,9 @@ package cmd
 
 import (
 	"fmt"
-	"io/ioutil"
-	"lw3-cli/contracts"
+
+	"github.com/6missedcalls/lw3-cli/contracts"
+	g "github.com/6missedcalls/lw3-cli/internal/generate"
 
 	"github.com/Songmu/prompter"
 	"github.com/spf13/cobra"
@@ -39,10 +40,7 @@ to quickly create a Cobra application.`,
 		}
 
 		// write the contract to the file
-		err = ioutil.WriteFile("test.sol", []byte(c), 0644)
-		if err != nil {
-			fmt.Println(err)
-		}
+		err = g.GenerateSol("contracts/erc-721.sol", c)
 
 		// write to the file
 		fmt.Println("Contract written to file")

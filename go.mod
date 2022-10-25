@@ -1,4 +1,4 @@
-module lw3-cli
+module github.com/6missedcalls/lw3-cli
 
 go 1.18
 

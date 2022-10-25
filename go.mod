@@ -1,4 +1,4 @@
-module github.com/6missedcalls/lw3-cli
+module github.com/6missedcalls/lw3-tool
 
 go 1.18
 

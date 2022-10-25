@@ -7,8 +7,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/6missedcalls/lw3-cli/contracts"
-	g "github.com/6missedcalls/lw3-cli/internal/generate"
+	"github.com/6missedcalls/lw3-tool/contracts"
+	"github.com/6missedcalls/lw3-tool/internal/generate"
 
 	"github.com/Songmu/prompter"
 	"github.com/spf13/cobra"
@@ -40,7 +40,7 @@ to quickly create a Cobra application.`,
 		}
 
 		// write the contract to the file
-		err = g.GenerateSol("contracts/erc-721.sol", c)
+		err = generate.GenerateSol("erc721.sol", c)
 
 		// write to the file
 		fmt.Println("Contract written to file")

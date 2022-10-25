@@ -19,13 +19,10 @@ import (
 // erc20Cmd represents the erc20 command
 var erc20Cmd = &cobra.Command{
 	Use:   "erc-20",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
+	Short: "This command will generate a SafeMintable, Enumerable, and Burnable ERC-20 contract",
+	Long: `This command will generate a SafeMintable, Enumerable, and Burnable ERC-20 contract
+	Usage: scaffold erc-20 -n <name> -t <ticker>`,
 
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		var (
 			n   string

@@ -9,8 +9,7 @@ import "strings"
 func BaseErc721(Name string, Ticker string) (string, error) {
 	sb := strings.Builder{}
 	sb.WriteString(
-		`
-// SPDX-License-Identifier: MIT
+		`// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";

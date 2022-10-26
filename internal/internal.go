@@ -1,6 +1,7 @@
 package internal
 
 import (
+	"context"
 	"fmt"
 	"os"
 
@@ -32,4 +33,11 @@ func CheckPath() (string, error) {
 		fmt.Println("Path created at: " + Path)
 	}
 	return Path, nil
+}
+
+func GetVersionInfo(ctx context.Context) (string, string, string) {
+	version := ctx.Value("version").(string)
+	commit := ctx.Value("commit").(string)
+	date := ctx.Value("date").(string)
+	return version, commit, date
 }

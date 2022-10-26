@@ -1,6 +1,6 @@
 module github.com/6missedcalls/lw3-tool
 
-go 1.18
+go 1.17
 
 require (
 	github.com/Songmu/prompter v0.5.1

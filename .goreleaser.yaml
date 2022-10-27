@@ -27,6 +27,7 @@ archives:
       amd64: x86_64
 checksum:
   name_template: 'checksums.txt'
+project_name: "scaffold"
 snapshot:
   name_template: "{{ incpatch .Version }}-next"
 changelog:
